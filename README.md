@@ -23,4 +23,6 @@ Extras
 -Randomiser
 -A way of selecting Gifs returned from search
 -translate, a way of returns Gifs relevant to a sentence or expression rather than search term
--a way to loop what's trending, a worldGif of sorts. 
+-a way to loop what's trending, a worldGif of sorts.
+
+-GIPHY API Key: 2cef034b6b3c4e21b628b1cc5e30b7d3
