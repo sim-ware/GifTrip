@@ -8,6 +8,10 @@ describe Search do
     it "creates a new Search object" do
       expect(subject).to be_instance_of(Search)
     end
+
+    it "has a default empty attributes" do
+      expect(subject.mantra).to eq('')
+    end
   end
 end
 
