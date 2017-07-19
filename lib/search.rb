@@ -1,3 +1,5 @@
+require 'giphy'
+
 class Search
   attr_accessor :mantra
 
