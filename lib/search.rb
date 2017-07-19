@@ -5,4 +5,8 @@ class Search
     @mantra = ''
   end
 
+  def mantra_maker(mantra)
+    @mantra = "#{mantra}"
+  end
+
 end

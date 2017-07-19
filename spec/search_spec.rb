@@ -12,6 +12,13 @@ describe Search do
     it "has a default empty attributes" do
       expect(subject.mantra).to eq('')
     end
+
+    describe '#mantra_maker'do
+      it 'adds a Mantra to the Search Object' do
+        subject.mantra_maker('Blue Zeitgeist')
+        expect(subject.mantra).to eq 'Blue Zeitgeist'
+      end
+    end
   end
 end
 

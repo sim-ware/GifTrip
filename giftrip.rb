@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/search'
 
 class GifTrip < Sinatra::Base
 
@@ -6,8 +7,9 @@ class GifTrip < Sinatra::Base
     erb :index
   end
 
-  post '/mantra' do
-    @mantra = params[:mantra]
+  post '/result' do
+    @search = Search.new
+    @search.mantra_maker(params[:mantra])
     erb :trippin
   end
 
@@ -16,7 +18,5 @@ class GifTrip < Sinatra::Base
 
 end
 
-
-# p params
-# @mantra = params[:mantra]
-# erb :trip
+# @search = Search.new
+# @search.mantra_maker(params[:mantra])
