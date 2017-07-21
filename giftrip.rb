@@ -18,5 +18,6 @@ class GifTrip < Sinatra::Base
 
 end
 
-# @search = Search.new
-# @search.mantra_maker(params[:mantra])
+# # @search = Search.new
+# # @search.mantra_maker(params[:mantra])
+# @gif = Giphy.search('#{@search.mantra}')
