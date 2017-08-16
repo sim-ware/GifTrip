@@ -15,8 +15,8 @@ describe Search do
 
     describe '#mantra_maker'do
       it 'adds a Mantra to the Search Object' do
-        subject.mantra_maker('Blue Zeitgeist')
-        expect(subject.mantra).to eq 'Blue Zeitgeist'
+        subject.mantra_maker('Blue Cat')
+        expect(subject.mantra).to eq 'Blue Cat'
       end
     end
   end

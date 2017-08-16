@@ -10,6 +10,8 @@ class GifTrip < Sinatra::Base
   post '/result' do
     @search = Search.new
     @search.mantra_maker(params[:mantra])
+    @search.giphy_call
+    @search.fill_urllist
     erb :trippin
   end
 
